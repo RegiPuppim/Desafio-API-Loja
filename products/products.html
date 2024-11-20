@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Loja</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../users/users.html">Usuários</a>
+      <a href="../products/products.html">Produtos</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Produtos</h2>
+    <form id="addProductForm">
+        <h3>Adicionar Novo Produto</h3>
+        <input type="text" id="productTitle" placeholder="Título" required />
+        <input type="text" id="productDescription" placeholder="Descrição" required />       
+        <input type="text" id="productBrand" placeholder="Marca" required />
+        <input type="text" id="productCategory" placeholder="Categoria" required />
+        <input type="number" id="productPrice" placeholder="Preço" step="0.01" required />
+        <input type="url" id="productThumbnail" placeholder="URL da Imagem (opcional)" />
+        <button type="submit">Adicionar Produto</button>
+      </form>
+      <ul id="productsList"></ul>
+  </main>
+  <script src="products.js"></script>
+</body>
+</html>
+

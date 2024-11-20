@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuários</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Minha Loja</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../users/users.html">Usuários</a>
+      <a href="../products/products.html">Produtos</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Usuários</h2>
+    <form id="addUserForm">
+        <h3>Adicionar Novo Usuário</h3>
+        <input type="text" id="userFirstName" placeholder="Primeiro Nome" required />
+        <input type="text" id="userLastName" placeholder="Último Nome" required />
+        <input type="email" id="userEmail" placeholder="Email" required />
+        <input type="number" id="userAge" placeholder="Idade" required />
+        <input type="url" id="userImage" placeholder="URL da Imagem (opcional)" />
+        <button type="submit">Adicionar Usuário</button>
+      </form>
+      <ul id="usersList"></ul>
+  </main>
+  <script src="users.js"></script>
+</body>
+</html>
+
+
